@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Surbhi AI Portfolio</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0f172a;
+color:white;
+transition:.3s;
+}
+
+body.light{
+background:white;
+color:black;
+}
+
+header{
+position:sticky;
+top:0;
+background:#111827;
+padding:15px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:1000;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+color:#38bdf8;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.hero h1{
+font-size:60px;
+}
+
+.hero span{
+color:#38bdf8;
+}
+
+#typing{
+color:#38bdf8;
+margin:15px 0;
+font-size:28px;
+}
+
+.hero p{
+max-width:800px;
+line-height:1.8;
+margin:20px 0;
+}
+
+.btn{
+display:inline-block;
+padding:12px 25px;
+background:#38bdf8;
+color:black;
+text-decoration:none;
+border-radius:10px;
+font-weight:bold;
+margin:10px;
+}
+
+section{
+padding:80px 10%;
+}
+
+h2{
+text-align:center;
+margin-bottom:40px;
+color:#38bdf8;
+}
+
+.skills .skill{
+margin-bottom:20px;
+}
+
+.bar{
+background:#1e293b;
+height:20px;
+border-radius:20px;
+overflow:hidden;
+}
+
+.fill{
+height:100%;
+background:#38bdf8;
+}
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:#1e293b;
+padding:25px;
+border-radius:15px;
+transition:.3s;
+text-align:center;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.projects a{
+text-decoration:none;
+color:white;
+}
+
+.certificates,
+.education{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
+}
+
+.item{
+background:#1e293b;
+padding:20px;
+border-radius:15px;
+}
+
+form{
+max-width:600px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+input,textarea{
+padding:15px;
+border:none;
+border-radius:10px;
+}
+
+button{
+padding:15px;
+border:none;
+background:#38bdf8;
+font-weight:bold;
+cursor:pointer;
+border-radius:10px;
+}
+
+footer{
+background:#111827;
+text-align:center;
+padding:20px;
+}
+
+#topBtn{
+position:fixed;
+right:20px;
+bottom:20px;
+padding:12px 16px;
+border:none;
+border-radius:50%;
+background:#38bdf8;
+cursor:pointer;
+display:none;
+}
+
+.toggle{
+cursor:pointer;
+padding:10px 15px;
+border:none;
+border-radius:8px;
+background:#38bdf8;
+font-weight:bold;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:40px;
+}
+
+nav{
+display:none;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">Surbhi AI</div>
+
+<nav>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<button class="toggle" onclick="toggleTheme()">🌙</button>
+
+</header>
+
+<section class="hero">
+
+<h1>Hello, I'm <span>Surbhi</span></h1>
+
+<h2 id="typing"></h2>
+
+<p>
+Welcome to my digital portfolio.
+I am passionate about Web Development,
+Artificial Intelligence, and creating innovative
+technology solutions that solve real-world problems.
+</p>
+
+<a href="#projects" class="btn">View Projects</a>
+<a href="#" class="btn">Download CV</a>
+
+</section>
+
+<section id="about">
+
+<h2>About Me</h2>
+
+<p style="text-align:center;line-height:1.8;">
+I am a passionate developer who enjoys building websites,
+AI chatbots, and useful applications. My goal is to learn,
+create, and innovate through technology.
+</p>
+
+</section>
+
+<section id="skills">
+
+<h2>Skills</h2>
+
+<div class="skills">
+
+<div class="skill">
+HTML - 100%
+<div class="bar"><div class="fill" style="width:100%"></div></div>
+</div>
+
+<div class="skill">
+CSS - 100%
+<div class="bar"><div class="fill" style="width:100%"></div></div>
+</div>
+
+<div class="skill">
+JavaScript - 100%
+<div class="bar"><div class="fill" style="width:100%"></div></div>
+</div>
+
+<div class="skill">
+Python - 100%
+<div class="bar"><div class="fill" style="width:100%"></div></div>
+</div>
+
+</div>
+
+</section>
+
+<section id="projects">
+
+<h2>Projects</h2>
+
+<div class="projects">
+
+<a href="file:///C:/Users/DELL/Desktop/surbhi%20AI/index.html">
+<div class="card">
+<h3>🤖 Surbhi AI</h3>
+<p>Click to open my AI Chatbot.</p>
+</div>
+</a>
+
+<a href="file:///C:/Users/DELL/Desktop/study%20app/index.html">
+<div class="card">
+<h3>study app 📒</h3>
+<p>quiz and strict study.</p>
+</div>
+</a>
+
+<a href="file:///C:/Users/DELL/Desktop/netflix%20o/index.html">
+<div class="card">
+<h3>💼 EpicStream</h3>
+<p>netflix clone.</p>
+</div>
+</a>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="item">
+    <h3>Learning Journey</h3>
+    <p>
+        Currently learning HTML, CSS, JavaScript, and AI technologies
+        through practice, projects, and continuous exploration.
+    </p>
+</div>
+
+</section>
+
+<section>
+
+<h2>Education</h2>
+
+<div class="education">
+
+<div class="item">
+<h3>School</h3>
+<p>I am currently studying in Class 6 and have a strong interest in
+        technology, coding. Along with my school
+        studies, I enjoy learning web development, creating websites, and
+        exploring how AI works. My goal is to continue improving my skills
+        and build innovative projects in the future.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2>Contact Me</h2>
+
+<form id="form">
+
+<input type="text" placeholder="Your Name" required>
+
+<input type="email" placeholder="Your Email" required>
+
+<textarea rows="5" placeholder="Message"></textarea>
+
+<button type="submit">Send Message</button>
+
+</form>
+
+<p id="msg" style="text-align:center;margin-top:20px;"></p>
+
+</section>
+
+<footer>
+
+<p>© 2026 Surbhi AI Portfolio. All Rights Reserved.</p>
+
+</footer>
+
+<button id="topBtn">↑</button>
+
+<script>
+
+const words=[
+"Web Developer",
+"AI Enthusiast",
+"Future Tech Creator"
+];
+
+let i=0;
+
+setInterval(()=>{
+document.getElementById("typing").innerHTML=words[i];
+i=(i+1)%words.length;
+},2000);
+
+function toggleTheme(){
+document.body.classList.toggle("light");
+}
+
+document.getElementById("form").addEventListener("submit",(e)=>{
+e.preventDefault();
+document.getElementById("msg").innerHTML=
+"✅ Message Sent Successfully!";
+});
+
+let topBtn=document.getElementById("topBtn");
+
+window.onscroll=function(){
+
+if(document.documentElement.scrollTop>300){
+topBtn.style.display="block";
+}else{
+topBtn.style.display="none";
+}
+
+};
+
+topBtn.onclick=function(){
+window.scrollTo({
+top:0,
+behavior:"smooth"
+});
+};
+
+</script>
+
+</body>
+</html>
